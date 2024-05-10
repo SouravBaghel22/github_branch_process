@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: skyblue;
+        }
+        h2{
+        font-size: 2rem;
+        columns: pink;
+        color: red;
+        text-align: center;
+        }
+        .wrapper {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            .wrapper li {
+                display: inline;
+                padding: 10px;
+            }
+            .main {
+  background-color:#FFFFFF;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-content: stretch;
+}
+.main div {
+  width: 100%;
+  height: 40px; 
+}
+
+        /* @media screen and (min-width:380px){ */
+            @media (max-width: 768px) and (min-width: 400px) {
+            body{
+                background-color: red;
+            }
+            h2{
+                font-size: 4rem;
+                color: yellowgreen;
+            }
+            .wrapper li{
+                display: block;
+                padding:15px;
+            }
+            .main {
+                width: 100%;
+                padding: 20px;
+            }
+            
+        }
+         @media screen and (max-width:400px) {
+            body{
+                background-color: yellow;
+            }
+            h2{
+                font-size: 4rem;
+                display: block;
+                color: red;
+            }
+            .wrapper li {
+                display: block;
+            }
+            .main div{
+                display: 100%;
+                padding: 20px;
+                align-content: stretch;
+            }
+            }     
+    </style>
+</head>
+<body>
+     <h2>Hello world</h2>
+     <nav>
+        <ul class="wrapper">
+            <li>Home</li>
+            <li>Contact</li>
+            <li>Product</li>
+            <li>Login</li>
+            <li>Sign-in</li>
+            <li>Servcies</li>
+        </ul>
+     </nav>
+     <div class="main">
+        Each media query must be enclosed in its own set of parentheses and separated by commas if you want them to apply to the same set of elements. Also, when specifying multiple conditions for a media query, they should be separated by the logical operators and, or, or not, depending on your requirements.
+     </div>
+</body>
+</html>
